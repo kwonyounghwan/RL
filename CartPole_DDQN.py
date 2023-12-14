@@ -154,12 +154,12 @@ def create_environment():
 
 # 모델 저장 함수
 def save_model(model, episode):
-    torch.save(model.state_dict(), f"cartpole_dqn_model_episode_{episode}.pt")
+    torch.save(model.state_dict(), f"cartpole_ddqn_model_episode_{episode}.pt")
     logger.info("The model has been saved.")
 
 # 모델 로드 함수
 def load_model(model, episode):
-    model.load_state_dict(torch.load(f"cartpole_dqn_model_episode_{episode}.pt"))
+    model.load_state_dict(torch.load(f"cartpole_ddqn_model_episode_{episode}.pt"))
     logger.info(f"Model from episode {episode} has been loaded.")
 
 # 메인 함수
@@ -235,7 +235,7 @@ def main():
     plt.title('Episode Scores over Time')
     plt.xlabel('Episode')
     plt.ylabel('Average Score')
-    plt.savefig('cartpole_double_dqn_Config1.png')
+    plt.savefig('cartpole_double_ddqn_Config1.png')
     plt.show()
 
     env.close()
