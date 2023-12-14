@@ -18,17 +18,19 @@ class Config1:
     batch_size = 32          # 미니배치 크기
     print_interval = 20      # 로그 정보를 출력하는 간격
 
-class Config2(Config):
+class Config2:
     learning_rate = 0.0001
     gamma = 0.99
     buffer_limit = 100000
     batch_size = 64
+    print_interval = 20
 
-class Config3(Config):
+class Config3:
     learning_rate = 0.001
     gamma = 0.95
     buffer_limit = 25000
     batch_size = 16
+    print_interval = 20
 
 config = Config1()
 
