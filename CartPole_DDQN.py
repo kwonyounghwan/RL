@@ -11,7 +11,7 @@ import logging
 from enum import Enum
 
 # 하이퍼파라미터
-class Config:
+class Config1:
     learning_rate = 0.0005   # 학습률
     gamma = 0.98             # 할인 계수 (미래 보상에 대한 할인 계수)
     buffer_limit = 50000     # 리플레이 버퍼의 최대 크기
@@ -30,7 +30,7 @@ class Config3(Config):
     buffer_limit = 25000
     batch_size = 16
 
-config = Config()
+config = Config1()
 
 # 행동 열거형
 class Actions(Enum):
