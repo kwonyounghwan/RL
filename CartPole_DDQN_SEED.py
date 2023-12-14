@@ -29,19 +29,6 @@ class Config:
     batch_size = 32          # Mini-batch size
     print_interval = 20      # Interval for logging information
 
-# Different configurations for experiments
-class Config2(Config):
-    learning_rate = 0.0001
-    gamma = 0.99
-    buffer_limit = 100000
-    batch_size = 64
-
-class Config3(Config):
-    learning_rate = 0.001
-    gamma = 0.95
-    buffer_limit = 25000
-    batch_size = 16
-
 # Enum for actions
 class Actions(Enum):
     LEFT = 0
