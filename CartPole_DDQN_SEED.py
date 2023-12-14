@@ -175,7 +175,6 @@ def run_experiment(seed, config_class):
 
 # 실험 횟수 및 시드 값
 num_experiments = 10
-# seed_values = [42, 123, 456, 789, 1011, 1213, 1415, 1617, 1819, 2021]
 seed_values = [111, 222, 333, 444, 555, 666, 777, 888, 999, 1111]
 all_experiment_results = []
 
